@@ -1,0 +1,323 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: #8e6129;
+}
+
+header > nav{
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header nav a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Aleo', serif;
+    font-size: x-large;
+}
+header > nav > a:hover{
+    color: #603a01;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #d4b583;
+}
+main > .tarjeta{
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #8e6129;
+    margin-top: 20px;
+}
+main > .tarjeta:hover{
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+main > .tarjeta > img{
+    width: 100%;
+    height: fit-content;
+}
+.img-propia{
+    width: 100%;
+    height: 300%;
+}
+
+footer{
+    background-color: #d4b583;
+    color: #774304;
+}
+h1{
+    color: #4e2c02;
+    text-decoration: underline;
+    background-color: #d4b583;
+    text-align: center;
+}
+h2{
+    color: #4e2c02;
+    text-decoration: underline;
+    background-color: #d4b583;
+    text-align: center;
+}
+h3{
+    color: #4e2c02;
+    background-color: #d4b583;
+    text-align: center;
+}
+.container{
+    background-color: #d4b583;
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+    color: #4e2c02;
+    
+}
+p{
+    background-color: #d4b583;
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+}
+main > .fondo{
+    background-color: #d4b583;
+}
+
+.main{
+   
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+    grid-template-areas: 
+    "area1 area2 area3 area4"
+    "area5 area5 area6 area4"
+    "area7 area8 area9 area9"
+    ;
+}
+
+#area1{
+    background-color: #b17f4e;
+    grid-area: area1;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#area2{
+    background-color: #976235;
+    grid-area: area2;
+}
+.img2{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#area3{
+    background-color: #632906;
+    grid-area: area3;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#area4{
+    background-color: #e5be86;
+    grid-area: area4;
+}
+.img4{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#area5{
+    background-color: #632906;
+    grid-area: area5;
+}
+.img5{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#area6{
+    background-color: #976235;
+    grid-area: area6;
+}
+.img6{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#area7{
+    background-color: #e5be86;
+    grid-area: area7;
+}
+.img7{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#area8{
+    background-color: #b17f4e;
+    grid-area: area8;
+}
+.img8{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+#area9{
+    background-color: #976235;
+    grid-area: area9;
+}
+.img9{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media (max-width: 768px){
+
+    .main{
+        border: 1px solid #632906;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        gap: 10px;
+        grid-template-areas: 
+        "area1 area2 area3"
+        "area4 area5 area6"
+        "area7 area8 area9"
+        ;
+    }
+    nav{
+        background-color: #b17f4e;
+    }
+}
+
+@media (max-width: 320px){
+    .main{
+        border: 1px solid #632906;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 100px);
+        gap: 10px;
+        grid-template-areas: 
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6"
+        "area7"
+        "area8"
+        "area9" ;
+    }
+}
+
+
+
+.main-us{
+    background-color: #d4b583;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "area1 area2"
+    "area5 area2"
+    "area5 area6" ;
+}
+
+#area1{
+    background-color: #d4b583;
+    grid-area: area1;
+    margin: 10px;
+    line-height: 1.5;
+    font-size: large;
+}
+
+#area2{
+    background-color: #d4b583;
+    grid-area: area2;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    margin: 8px;
+}
+
+#area4{
+    background-color: #d4b583;
+    grid-area: area4;
+}
+#area5{
+    background-color: #d4b583;
+    grid-area: area5;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    margin-top: 1px;
+}
+#area6{
+    background-color: #d4b583;
+    grid-area: area6;
+    margin: 10px;
+    line-height: 1;
+    font-size: large;
+    text-align: justify;
+    margin: 2px;
+}
+@media (max-width: 768px){
+
+    .main-us{
+        border: 1px solid #632906;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        gap: 10px;
+        grid-template-areas: 
+        "area1 area2"
+        "area5 area6"
+        ;
+    }
+    nav{
+        background-color: #b17f4e;
+    }
+}
+
+@media (max-width: 320px){
+    .main-us{
+        border: 1px solid #632906;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 100px);
+        gap: 10px;
+        grid-template-areas: 
+        "area1"
+        "area2"
+        "area5"
+        "area6";
+    }
+}
